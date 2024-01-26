@@ -1,0 +1,98 @@
+*{font-size: 1rem;}
+
+:root {
+    --font-header: 'DM Serif Text', serif;
+    --font-logo: serif;
+    --font-para: serif;
+}
+
+h {
+    font-family: var(--font-header);
+}
+p {
+    font-family: var(--font-para);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    top:0;
+    left:0;
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navLinks{
+    list-style: none;
+    display: flex;
+}
+nav > a {
+    padding: 10px 10px;
+    font-family: var(--font-logo);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#navLinks > li{
+    padding: 0 10px;
+}
+
+
+.Hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;height:70vh;
+    background-color: rgb(94, 124, 242);
+    margin: none;
+    left: 0;
+}
+.Hero > h {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.Hero > p {
+    text-align: center;
+}
+
+.AboutUs {
+    padding: 10px;
+}
+
+.AboutUs > h {
+    font-size: 4em;
+    font-weight: bold;
+}
+.AboutUs > p {
+    font-size: 2em;
+}
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+.card-container > card {
+    border: 2px black dashed;
+    padding: 0 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.card-container > card > img {
+    height: 20vh; width: 100%;
+    border-radius:10px;
+}
+card>div  > h {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
