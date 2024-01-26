@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
+
 *{font-size: 1rem;}
 
 :root {
-    --font-header: 'DM Serif Text', serif;
+    --font-header: 'Kanit', sans-serif;
     --font-logo: serif;
     --font-para: serif;
 }
@@ -36,7 +38,7 @@ nav{
 nav > a {
     padding: 10px 10px;
     font-family: var(--font-logo);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -56,8 +58,9 @@ nav > a {
     left: 0;
 }
 .Hero > h {
-    font-size: 1.5rem;
+    font-size: 4rem;
     font-weight: bold;
+    letter-spacing: -2px;
 }
 .Hero > p {
     text-align: center;
