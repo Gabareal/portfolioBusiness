@@ -6,6 +6,9 @@
     --font-header: 'Kanit', sans-serif;
     --font-logo: serif;
     --font-para: serif;
+    --main-color: #fefae0;
+    --accent-color: #dda15e;
+    --CTA-color: #bc6c25;
 }
 
 h {
@@ -53,7 +56,9 @@ nav > a {
     justify-content: center;
     align-items: center;
     width: 100vw;height:70vh;
-    background-color: rgb(94, 124, 242);
+    background-color: var(--accent-color);
+    background-position: center center;
+    background-size: cover;
     margin: none;
     left: 0;
 }
@@ -68,6 +73,7 @@ nav > a {
 
 .AboutUs {
     padding: 10px;
+    background-color: var(--main-color);
 }
 
 .AboutUs > h {
