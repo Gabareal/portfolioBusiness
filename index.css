@@ -4,10 +4,9 @@
 
 :root {
     --font-header: 'Kanit', sans-serif;
-    --font-logo: serif;
-    --font-para: serif;
-    --main-color: #fefae0;
-    --accent-color: #dda15e;
+    --font-para: 'Inter';
+    --main-color: white;
+    --accent-color: #031927;
     --CTA-color: #bc6c25;
 }
 
@@ -25,28 +24,36 @@ body{
 nav{
     top:0;
     left:0;
-    position: absolute;
+    position: relative;
     z-index: 1;
     width: 100vw;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: white;
+    height: 100px
 }
 
 #navLinks{
     list-style: none;
     display: flex;
 }
-nav > a {
-    padding: 10px 10px;
-    font-family: var(--font-logo);
-    font-size: 1.5rem;
-    font-weight: bold;
+nav > i {
+    margin-left: 50px;
 }
 
 #navLinks > li{
-    padding: 0 10px;
+    margin: 0 50px;
+    font-size: 2rem;
+    font-family: 'Inter';
+    align-self: center;
+    transition-duration: 0.3s;
+    border: none;
+}
+
+#navlinks > li:hover{
+    border: black dashed;
 }
 
 
@@ -66,9 +73,12 @@ nav > a {
     font-size: 4rem;
     font-weight: bold;
     letter-spacing: -2px;
+    color: var(--main-color);
+    text-align: center;
 }
 .Hero > p {
     text-align: center;
+    color: var(--main-color);
 }
 
 .AboutUs {
