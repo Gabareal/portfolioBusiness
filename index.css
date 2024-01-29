@@ -135,6 +135,9 @@ card > img {
     text-align: center;
     font-size: 2rem;
 }
+.PlansCards > * {
+    color: white;
+}
 /*Contact us*/
 .ContactUs {
     display: flex;
