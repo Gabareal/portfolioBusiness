@@ -7,7 +7,7 @@
     --font-para: 'Inter';
     --main-color: white;
     --accent-color: #031927;
-    --CTA-color: #dda15e;
+    --CTA-color: #6F8695;
 }
 
 h {
@@ -19,6 +19,7 @@ p {
 body{
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 nav{
@@ -49,11 +50,10 @@ nav > i {
     font-family: 'Inter';
     align-self: center;
     transition-duration: 0.3s;
-    border: none;
 }
 
-#navlinks > li:hover{
-    border: black dashed;
+#navLinks > li:hover{
+    color: var(--CTA-color);
 }
 
 
@@ -63,7 +63,7 @@ nav > i {
     justify-content: center;
     align-items: center;
     width: 100vw;height:70vh;
-    background-color: var(--accent-color);
+    background: linear-gradient(45deg, var(--CTA-color), var(--accent-color));
     background-position: center center;
     background-size: cover;
     margin: none;
@@ -86,12 +86,12 @@ nav > i {
     background-color: var(--main-color);
 }
 
-.AboutUs > h {
+.AboutUs > h{
     font-size: 4em;
     font-weight: bold;
 }
 .AboutUs > p {
-    font-size: 2em;
+    font-size: 2rem;
 }
 .card-container {
     display: flex;
@@ -101,7 +101,7 @@ nav > i {
 }
 .card-container > card {
     border: 2px black dashed;
-    padding: 0 10px;
+    padding: 10px 10px;
     margin: 10px;
     border-radius: 10px;
     width: 30%;
@@ -111,11 +111,16 @@ nav > i {
     height: 20vh; width: 100%;
     border-radius:10px;
 }
-card >div  > h {
+card > div  > h {
     font-size: 1.2rem;
     font-weight: bold;
 }
 card > img {
     object-fit: cover;
     object-position: center center;
+}
+/*Contact us*/
+.ContactUs {
+    display: flex;
+    justify-content: center;
 }
