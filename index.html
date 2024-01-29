@@ -71,15 +71,26 @@
     </div>
     <!--Contact Us-->
     <div class="ContactUs">
-        <div class="contactInfo">
-            <h>CONTACT US</h>
-            <p>Like what you see? Feel free to contact us using the form, or at our socials!</p>
-        </div>
-        <div class="contactFormContainer">
-            <form></form>
+        <div class="contactUsContainer">
+            <div class="contactInfo">
+                <h>CONTACT US</h>
+                <p>Like what you see? Feel free to contact us using the form, or at our socials!</p>
+            </div>
+            <div class="contactFormContainer">
+                <form action="https://api.web3forms.com/submit" onsubmit="sendEmail();reset();return false;"
+                    method="POST">
+                    <input type="hidden" name="access_key" value="9dcdcfe2-fff8-4d4f-9f95-fa653f217214">
+                    <input type="name" name="name" id="contactFormName" placeholder="Enter your name...">
+                    <input type="email" name="email" id="contactFormEmail" placeholder="Enter your email...">
+                    <textarea name="message" id="contactFormMessage" cols="30" rows="10"
+                        placeholder="Enter your messsage:"></textarea>
+                    <input type="submit" id="contactFormSubmit">
+                </form>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 
 </html>
