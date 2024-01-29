@@ -12,8 +12,10 @@
 
 h {
     font-family: var(--font-header);
+    font-size: 4rem;
+    font-weight: bold;
 }
-p {
+p,li,a {
     font-family: var(--font-para);
 }
 body{
@@ -33,7 +35,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     background: white;
-    height: 100px
+    height: 100px;
 }
 
 #navLinks{
@@ -47,7 +49,6 @@ nav > i {
 #navLinks > li{
     margin: 0 50px;
     font-size: 2rem;
-    font-family: var(--font-para);
     align-self: center;
     transition-duration: 0.3s;
 }
@@ -70,9 +71,6 @@ nav > i {
     left: 0;
 }
 .Hero > h {
-    font-size: 4rem;
-    font-weight: bold;
-    letter-spacing: -2px;
     color: var(--main-color);
     text-align: center;
 }
@@ -81,14 +79,9 @@ nav > i {
     color: var(--main-color);
 }
 
-.AboutUs {
+.AboutUs, .OurCustomers, .OurPlans {
     padding: 10px;
     background-color: var(--main-color);
-}
-
-.AboutUs > h{
-    font-size: 4em;
-    font-weight: bold;
 }
 .AboutUs > p {
     font-size: 2rem;
@@ -113,7 +106,6 @@ nav > i {
 }
 card > div  > h {
     font-size: 1.2rem;
-    font-weight: bold;
 }
 card > img {
     object-fit: cover;
@@ -122,9 +114,6 @@ card > img {
 
 /*Our Plans*/
 .OurPlans > h{
-    font-size: 4rem;
-    font-weight: bold;
-    letter-spacing: -2px;
     text-align: center;
 }
 .OurPlans > .cardContainer {
@@ -141,9 +130,6 @@ card > img {
 .PlansCards > #price {
     text-align: center;
     font-size: 2rem;
-}
-.PlansCards > ul > li{
-    font-family: var(--font-para);
 }
 /*Contact us*/
 .ContactUs {
@@ -164,7 +150,6 @@ card > img {
     max-width: 40vw;
 }
 .contactInfo > h {
-    font-family: var(--font-header);
     font-weight: 500;
     font-size: 1.4rem;
 }
