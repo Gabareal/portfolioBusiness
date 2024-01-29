@@ -119,6 +119,32 @@ card > img {
     object-fit: cover;
     object-position: center center;
 }
+
+/*Our Plans*/
+.OurPlans > h{
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: -2px;
+    text-align: center;
+}
+.OurPlans > .cardContainer {
+    display: flex;
+    justify-content: center;
+}
+.PlansCards {
+    padding: 10px;
+    border: black 2px dashed;
+    width: 20vw;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+.PlansCards > #price {
+    text-align: center;
+    font-size: 2rem;
+}
+.PlansCards > ul > li{
+    font-family: var(--font-para);
+}
 /*Contact us*/
 .ContactUs {
     display: flex;
