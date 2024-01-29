@@ -126,7 +126,7 @@ card > img {
 }
 .PlansCards {
     padding: 10px;
-    border: black 2px dashed;
+    background: var(--accent-color);
     width: 20vw;
     margin: 0 20px;
     border-radius: 10px;
